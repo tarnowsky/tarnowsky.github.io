@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <title>Moje Hobby</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/header_styles.css">
+        <link rel="stylesheet" href="styles/main_content_styles.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/lyrics.css">
+        <link rel="stylesheet" href="styles/contact.css">
+        <link rel="icon" type="image/png" href="img/pixil-frame-0.png">
+        <script defer src="script/contact.js"></script>
+        <script defer src="script/brightness.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header-title">
+                <a href="index.html">
+                    <h2>Red Lust</h2>
+                </a>
+            </div>
+            <div id="brightness">
+                <img id="brightnessLogo" src="img/header/brightness.png" alt="kontrast">
+            </div>
+            <nav>
+                <div id="nav-menu">
+                    <div class="menu-block">
+                        <a href="index.html">Strona główna</a>
+                    </div>
+                    <div class="menu-block" id="lyrics-nav">
+                        <a href="lyrics.html">Teksty</a>
+                        <ul>
+                            <li>
+                                <a href="lyrics_1.html">Lata 2017-2018</a>
+                            </li>
+                            <li>
+                                <a href="lyrics_2.html">Lata 2019-2020</a>
+                            </li>
+                            <li>
+                                <a href="lyrics_3.html">Lata 2021-2022</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-block">
+                        <a href="gallery.html">Galeria</a>
+                    </div>
+                    <div class="menu-block">
+                        <a href="#">Kontakt</a>
+                    </div>
+                </div>
+            </nav>
+            <div id="header-social-icons">
+                <div class="header-social-icon">
+                    <a href="https://www.facebook.com/redlust.theband" target="_blank">
+                        <img src="img/Nav/facebook.png" id="fb-icon" alt="Facebook icon" class="fbLink">
+                    </a>
+                </div>
+                <div class="header-social-icon">
+                    <a href="https://www.instagram.com/redlust_official/" target="_blank">
+                        <img src="img/Nav/instagram.png" id="insta-icon" alt="Instagram icon" class="instaLink">
+                    </a>
+                </div>
+            </div>
+            <input type="checkbox" id="burger-butt">
+            <label for="burger-butt" id="burger-menu">
+                <span id="burger">
+                    <span class="burger-ele" id="top"></span>
+                    <span class="burger-ele" id="middle"></span>
+                    <span class="burger-ele" id="bottom"></span>
+                </span>
+                <span id="burger-content">
+                    <span id="burgerBrightness">
+                        <img id="burgerBrightnessLogo" src="img/header/brightness.png" alt="kontrast">
+                    </span>
+                    <span id="nav-in-burger">
+                        <span>
+                            <a href="index.html">Strona główna</a>
+                        </span>
+                        <span id="lyrics-burger-container">
+                            <a href="lyrics.html">Teksty</a>
+                            <span id="submenu-container">
+                                <span class="submenu-ele">
+                                    <a href="lyrics_1.html">Lata 2017-2018</a>
+                                </span>
+                                <span class="submenu-ele">
+                                    <a href="lyrics_2.html">Lata 2019-2020</a>
+                                </span>
+                                <span class="submenu-ele">
+                                    <a href="lyrics_3.html">Lata 2020-2022</a>
+                                </span>
+                            </span>
+                        </span>
+                        <span>
+                            <a href="gallery.html">Galeria</a>
+                        </span>
+                        <span>
+                            <a href="#">Kontakt</a>
+                        </span>
+                    </span>
+                    <span id="socials-in-burger">
+                        <span class="burger-photoBox">
+                            <a href="https://www.facebook.com/redlust.theband" target="_blank">
+                                <img src="img/Nav/facebook.png" alt="Facebook logo" class="fbLink">
+                            </a>
+                        </span>
+                        <span class="burger-photoBox">
+                            <a href="https://www.instagram.com/redlust_official/" target="_blank">
+                                <img src="img/Nav/instagram.png" alt="Instagram logo" class="instaLink">
+                            </a>
+                        </span>
+                    </span>
+                </span>
+            </label>
+            
+        </header>
+        <main id="contact-container">
+            <section id="contact">
+                <h3 id="first-contact-block">Kontakt biznesowy</h3>
+                <p>
+                    e-mail: redlustband@gmail.com<br>
+                    koncerty: +48 674 840 693<br>
+                    współprace: +48 673 679 481
+                </p>
+                <button id="moreContactBtn">Kontakt bezpośredni</button>
+                <div id="moreContact">
+                    <h4>Kontakt bezpośredni</h4>
+                    <p>Michał Tarnowski 🎙: mtarnowski@redlust.com<br>
+                        Szymon Szymański 🎸: sszymanski@redlust.com<br>
+                        Szymon Bruski 🎸: sbruski@redlust.com<br>
+                        Wiktor Czapiewski 🥁: wczapiewski@redlust.com
+                    </p>
+                </div>
+                <h3>Pomóż nam dotrzeć do większej ilości osób 
+                    wypełniając <span>krótki formularz</span></h3>
+                <form action="action.php" method="get">
+                    <label for="fname">Imię:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Imię..."><br>
+                    <label for="sname">Nazwisko:</label><br>
+                    <input type="text" id="sname" name="sname" placeholder="Nazwisko..."><br>
+                    <label for="bday">Data urodzenia:</label><br>
+                    <span id="birthday">
+                        <select id="bday" name="bday">
+                            <option value="none">Dzień</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select id="bmonth" name="bmonth">
+                            <option value="none">Miesiąc</option> 
+                            <option value="1">styczeń</option> 
+                            <option value="2">luty</option> 
+                            <option value="3">marzec</option> 
+                            <option value="4">kwiecień</option> 
+                            <option value="5">maj</option> 
+                            <option value="6">czerwiec</option> 
+                            <option value="7">lipiec</option> 
+                            <option value="8">sierpień</option> 
+                            <option value="9">wrzesień</option> 
+                            <option value="10">październik</option> 
+                            <option value="11">listopad</option> 
+                            <option value="12">grudzień</option> 
+                        </select>
+                        <input type="text" id="byear" placeholder="Rok...">
+                    </span><br>
+                    <label for="gender">Płeć:</label><br>
+                    <select id="gender" name="sex">
+                        <option value="female">Kobieta</option>
+                        <option value="male">Mężczyzna</option>
+                        <option value="other">Inna</option>
+                    </select><br>
+                    <label>Zespół poznałem przez:</label><br>
+                    <span>
+                        <input type="checkbox" id="fsocial" name="facebook">
+                        <label for="fsocial" class="label-right">Facebooka</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="isocial" name="instagram">
+                        <label for="isocial" class="label-right">Instagrama</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="friendsocial" name="friend">
+                        <label for="friendsocial" class="label-right">Znajomych</label>
+                    </span><br>
+                    <label for="mail">E-mail:</label><br>
+                    <input type="email" id="mail" name="mail" placeholder="E-mail..."><br>
+                    <span>
+                        <input type="radio" id="music-on" name="music">
+                        <label class="label-right" for="music-on" >Gram na instrumencie</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="music-off" name="music">
+                        <label class="label-right" for="music-off" >Nie gram na instrumencie</label>
+                    </span>
+                    <span id="submit-form">
+                        <input type="submit" value="Prześlij">
+                        <input type="reset" value="Wyczyść">
+                    </span>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div id="sections">
+                <table>
+                    <thead>
+                        <tr><th>Sekcje</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="index.html">Strona główna</a></td></tr>
+                        <tr><td><a href="lyrics.html">Teksty</a></td></tr>
+                        <tr><td><a href="gallery.html">Galeria</a></td></tr>
+                        <tr><td><a href="#">Kontakt</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="socials">
+                <table>
+                    <thead>
+                        <tr><th>Social media</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="https://www.facebook.com/redlust.theband">Facebook</a></td></tr>
+                        <tr><td><a href="https://www.instagram.com/redlust_official/">Instagram</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="newsletter">
+                <h4>Zapisz się do Newslettera!</h4>
+                <form action="/action_page.php" method="post">
+                    <label for="name">Imię:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Twoje imię..."><br>
+                    <label for="surname">Nazwisko:</label><br>
+                    <input type="text" id="surname" name="surname" placeholder="Twoje nazwisko..."><br>
+                    <label for="sex">Płeć</label><br>
+                    <select id="sex" name="sex">
+                        <option value="female">Kobieta</option>
+                        <option value="male">Mężczyzna</option>
+                        <option value="other">Inna</option>
+                    </select><br>
+                    <label for="e-mail">e-mail:</label><br>
+                    <input type="text" id="e-mail" placeholder="Twój e-mail..."><br>
+                    <input type="submit" value="Prześlij">
+                </form>
+            </div>
+            <div id="signature">Hipertekst i Hipermedia - Michał Tarnowski - 2022</div>
+        </footer>
+    </body>
+</html>
