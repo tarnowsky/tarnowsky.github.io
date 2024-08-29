@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --footer-height: 8rem;
+    --font: "Lato", sans-serif;
+    --font-thin: 100;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-bold: 700;
+    --font-black: 900;
+
+    
+    --color-normal: #000;
+    --color-important: #004346;
+    --color-light: #75dddd;
+    --color-button-background: #508991;
+    --color-dark: #172a3a;
+    --color-button-outline: #09BC8A;
+    --color-background: white;
+}
+
+* {
+    margin: 0;
+    font-family: var(--font);
+    text-decoration: none;
+    color: var(--color-normal);
+    scroll-behavior: smooth;
+
+}
+
+*::selection {
+    color: var(--color-background);    
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: var(--footer-height);
+}

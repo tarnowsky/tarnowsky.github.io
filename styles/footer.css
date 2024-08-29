@@ -1,0 +1,23 @@
+
+footer {
+    display: flex;
+    background-color: var(--color-dark);
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+
+    
+
+    align-items: center;
+    justify-content: center;
+}
+
+footer h5 {
+    color: var(--color-light);
+}
+
+footer h5 a {
+    color: var(--color-light);
+}
