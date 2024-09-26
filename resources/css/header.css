@@ -2,6 +2,7 @@
 #header-container {
     position: fixed;
     width: 100%;
+    min-height: var(--header-min-height);
     top: 0;
 
     display: flex;
