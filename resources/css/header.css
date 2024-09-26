@@ -5,6 +5,8 @@
     min-height: var(--header-min-height);
     top: 0;
 
+    z-index: 99;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,15 +22,6 @@
     display: flex;
     gap: 0.5em;
     cursor: pointer;
-}
-
-.title_letter {
-    font-size: 1.5em;
-    transition: 0.2s ease;
-}
-
-.title_letter:hover {
-    transform: translateY(-4px);
 }
 
 nav {
@@ -48,7 +41,7 @@ nav {
     display: flex;
     align-items: center;
     font-weight: var(--font-regular);
-    
+    width: fit-content;
 }
 
 .nav-link {
@@ -71,5 +64,19 @@ nav {
 }
 
 .btn-norm:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
+}
+
+#lang-flag-container {
+    transform: translateY(10%);
+}
+
+#lang-flag {
+    width: 40px;
+    border: 1px transparent;
+    border-radius: px 0 25px 0;
+}
+
+#lang-flag:hover {
+    cursor: pointer;
 }
