@@ -95,7 +95,7 @@ main {
 
 .card-txt {
     min-width: 50px;
-    max-width: 30%;
+    max-width: 40%;
     width: fit-content;
     padding: 10px;
     display: flex;
