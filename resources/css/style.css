@@ -54,8 +54,8 @@ main {
     padding-bottom: var(--footer-height);
 }
 
-.main-section {
-    height: 100vh;
+section {
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }

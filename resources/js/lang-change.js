@@ -2,7 +2,7 @@ const lang_flag_img = document.getElementById('lang-flag');
 const lang_flag_container = document.getElementById('lang-flag-container');
 const navLinks = document.querySelectorAll('.nav-link');
 const bioText = document.getElementById('card-txt-bio');
-const jobText = document.getElementById('card-txt-job');
+const jobText = document.getElementById('card-txt-exp-intl');
 
 const imgSrc = ['resources/images/united-kingdom.png', 'resources/images/poland.png'];
 
@@ -19,7 +19,7 @@ const loadContent = (language) => {
             navLinks[3].textContent = content.navigation.contact;
 
             bioText.innerHTML = content['card-txt-bio'];
-            jobText.innerHTML = content['card-txt-job'];
+            jobText.innerHTML = content['card-txt-exp-intl'];
         })
         .catch(error => console.error('Error loading content:', error));
 }
