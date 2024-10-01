@@ -9,7 +9,7 @@
 
         "card-txt-bio": "<h2>Witam! Cześć.</h2><p>Mam na imię <span class=\"card-txt-bold\">Michał</span>, jestem studentem na <span class=\"card-txt-bold\">Politechnice Gdańskiej</span> oraz programistą w Intel Poland. Pasjonuję się programowaniem, <span class=\"card-txt-italic\">techonologią</span>, oraz rozwiązywaniem problemów uzywając<span class=\"card-txt-bold card-txt-italic\">nowoczesnych</span> rozwiązań.<br><br>Wejdź i sprawdź moje <span class=\"card-txt-bold\">doświadczenie</span> oraz <span class=\"card-txt-bold\">ostatnie projekty</span>.</p>",
 
-        "card-txt-job": "<h2>Intel Poland</h2><h3>2023 - aktualnie</h3><p>I'm <span class=\"card-txt-bold\">Mike</span>, student at <span class=\"card-txt-bold\">Gdańsk University of Technology</span> and Intern Software Engenieer at Intel Poland. I'm passionate about coding, <span class=\"card-txt-italic\">technology</span>, and solving complex problems with <span class=\"card-txt-bold card-txt-italic\">innovative</span> solutions.<br><br>Come and check out my <span class=\"card-txt-bold\">background</span> and <span class=\"card-txt-bold\">recent work</span>.</p>"
+        "card-txt-job": "<h2>Intel Polska</h2><h3>2023 - Obecnie</h3><p>Jako <span class=\"card-txt-bold\">stażysta</span> w <span class=\"card-txt-bold\">Intel Polska</span> rozwijam moduł <span class=\"card-txt-bold card-txt-italic\">BIOS Guard</span> i tworzę narzędzia usprawniające pracę zespołu w Pythonie i Batchu.<br/><br/>Aktywnie uczestniczę w <span class=\"card-txt-italic\">międzynarodowej współpracy</span>, <span class=\"card-txt-bold\">blisko</span> współpracując z zespołami Intela z Indii i USA.</p>"
     },
 
     "english": {
@@ -22,7 +22,7 @@
 
         "card-txt-bio": "<h2>Hi! Welcome.</h2><p>I'm <span class=\"card-txt-bold\">Mike</span>, student at <span class=\"card-txt-bold\">Gdańsk University of Technology</span> and Intern Software Engenieer at Intel Poland. I'm passionate about coding, <span class=\"card-txt-italic\">technology</span>, and solving complex problems with <span class=\"card-txt-bold card-txt-italic\">innovative</span> solutions.<br><br>Come and check out my <span class=\"card-txt-bold\">background</span> and <span class=\"card-txt-bold\">recent work</span>.</p>",
 
-        "card-txt-job": "<h2>Intel Poland</h2><h3>2023 - now</h3><p>I'm <span class=\"card-txt-bold\">Mike</span>, student at <span class=\"card-txt-bold\">Gdańsk University of Technology</span> and Intern Software Engenieer at Intel Poland. I'm passionate about coding, <span class=\"card-txt-italic\">technology</span>, and solving complex problems with <span class=\"card-txt-bold card-txt-italic\">innovative</span> solutions.<br><br>Come and check out my <span class=\"card-txt-bold\">background</span> and <span class=\"card-txt-bold\">recent work</span>.</p>"
+        "card-txt-job": "<h2>Intel Poland</h2><h3>2023 - Present</h3><p>As an Intern Software Engineer at <span class=\"card-txt-bold\">Intel Poland</span>, I develop the <span class=\"card-txt-bold card-txt-italic\">BIOS Guard module</span> and create workflow improvement tools using Python and Batch scripting.<br/><br/>I actively participate in <span class=\"card-txt-italic\">international collaborations</span>, working <span class=\"card-txt-bold\">closely</span> with teams from Intel India and the USA.</p>"
     }
     
 }
