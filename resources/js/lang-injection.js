@@ -2,9 +2,16 @@ const lang_flag_img = document.getElementById('lang-flag');
 const lang_flag_container = document.getElementById('lang-flag-container');
 const navLinks = document.querySelectorAll('.nav-link');
 const bioText = document.getElementById('card-txt-bio');
-const jobText = document.getElementById('card-txt-exp-intl');
 
-const imgSrc = ['resources/images/united-kingdom.png', 'resources/images/poland.png'];
+const expTexts = {
+    pg:     document.getElementById('card-txt-exp-pg'),
+    intel:  document.getElementById('card-txt-exp-intl'),
+};
+
+const imgSrc = [
+    'resources/images/poland.png',
+    'resources/images/united-kingdom.png',
+];
 
 lang_flag_img.src = imgSrc[0];
 
@@ -18,16 +25,19 @@ const loadContent = (language) => {
             navLinks[2].textContent = content.navigation.projects;
             navLinks[3].textContent = content.navigation.contact;
 
-            bioText.innerHTML = content['card-txt-bio'];
-            jobText.innerHTML = content['card-txt-exp-intl'];
+            bioText.innerHTML = content.bio_section;
+
+            for (let id in expTexts) {
+                expTexts[id].innerHTML = content.experience_section[id];
+            }
         })
         .catch(error => console.error('Error loading content:', error));
 }
 
-loadContent('polish');
+loadContent('english');
 
 lang_flag_container.addEventListener('click', () => {
-    const newLang = lang_flag_img.src.includes(imgSrc[0]) ? 'english' : 'polish';
+    const newLang = lang_flag_img.src.includes(imgSrc[0]) ? 'polish' : 'english';
     lang_flag_img.src = lang_flag_img.src.includes(imgSrc[0]) ? imgSrc[1] : imgSrc[0];
     loadContent(newLang);
 });

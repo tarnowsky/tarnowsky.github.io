@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="resources/css/style.css"/>
     <link rel="stylesheet" href="resources/css/footer.css"/>
     <link rel="stylesheet" href="resources/css/header.css"/>
+    <link rel="stylesheet" href="resources/css/section.css"/>
 
     <link rel="stylesheet" href="global/css/loader.css"/>
 
     <script src="resources/js/script.js" defer></script>
-    <script src="resources/js/lang-change.js" defer></script>
+    <script src="resources/js/lang-injection.js" defer></script>
 
     <script src="global/js/jquery-3.7.1.min.js" defer></script>
     <script src="global/js/loader.js" defer></script>
@@ -27,10 +28,10 @@
                 </a>
                 <nav>
                     <div id="page-navigation-list">
-                        <div><a class="nav-link btn-norm" href="#bio">Bio</a></div>
-                        <div><a class="nav-link btn-norm" href="#job_experience">Job Experience</a></div>
-                        <div><a class="nav-link btn-diff" href="#projects">Projects</a></div>
-                        <div><a class="nav-link btn-norm" href="#contact">Contact</a></div>
+                        <div><a class="nav-link btn-norm" href="#bio"></a></div>
+                        <div><a class="nav-link btn-norm" href="#experience"></a></div>
+                        <div><a class="nav-link btn-diff" href="#projects"></a></div>
+                        <div><a class="nav-link btn-norm" href="#contact"></a></div>
                         <div><a id="lang-flag-container" href="#contact"><img id="lang-flag"/></a></div>
                     </ul>
                 </nav>
@@ -46,12 +47,24 @@
                 </div>
             </section>
             <section id="experience">
-                <img class="main-page-bg-img" src="resources/svg/blob-haikei.svg" alt="Image Description"/>
-                <div id="bio-core-container" class="section-core-container">
-                    <div class="card-img-container">
-                        <img class="card-img" src="resources/images/Intel-logo-2022.png" alt="Intel logo 2022"/>
+                <div class="exp-card-wrapper">
+                    <img class="main-page-bg-img" src="resources/svg/blob-pg.svg" alt="Image Description"/>
+                    <div id="bio-core-container" class="section-core-container">
+                        <div class="card-img-container">
+                            <img class="card-img" src="resources/images/pg-logo.png" alt="PG logo"/>
+                        </div>
+                        <div class="card-txt card-txt-right bg-transparent" id="card-txt-exp-pg">
+                        </div>
                     </div>
-                    <div class="card-txt card-txt-right bg-transparent" id="card-txt-exp-intl">
+                </div>
+                <div class="exp-card-wrapper">
+                    <img class="main-page-bg-img" src="resources/svg/blob-intel.svg" alt="Image Description"/>
+                    <div id="bio-core-container" class="section-core-container section-core-container-img-right">
+                        <div class="card-img-container">
+                            <img class="card-img" src="resources/images/Intel-logo-2022.png" alt="Intel logo 2022"/>
+                        </div>
+                        <div class="card-txt bg-transparent" id="card-txt-exp-intl">
+                        </div>
                     </div>
                 </div>
             </section>
