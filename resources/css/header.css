@@ -16,21 +16,12 @@
     background-color: var(--color-background);
 }
 
-#title {
-    margin-left: 15em;
-    font-weight: var(--font-bold);
-    display: flex;
-    gap: 0.5em;
-    cursor: pointer;
-}
-
 nav {
     display: flex;
 }
 
 #page-navigation-list {
-    margin-right: 4em;
-
+    margin-right: var(--header-margin-rl);
     display: flex;
     column-gap: 2em;
 }
@@ -67,16 +58,110 @@ nav {
     transform: translateY(-2px);
 }
 
-#lang-flag-container {
+.lang-flag-container {
     transform: translateY(10%);
 }
 
-#lang-flag {
+.lang-flag {
     width: 40px;
     border: 1px transparent;
     border-radius: px 0 25px 0;
 }
 
-#lang-flag:hover {
+.lang-flag:hover {
     cursor: pointer;
+}
+
+#burger {
+    display: none;
+}
+
+#burger-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: var(--header-min-height);
+    right: -100%;
+    background-color: var(--color-background);
+    width: 100%;
+    transition: right 0.5s ease-in-out;
+    z-index: -100; 
+}
+
+#burger-menu.active {
+    right: 0;
+}
+
+.burger-link {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 369px) {
+    #title {
+        margin: 20px 0 20px 30px;
+    }
+}
+@media screen and (min-width: 370px) {
+    #title {
+        margin: 0 0 0 var(--header-margin-rl);
+    }
+}
+
+@media screen and (max-width: 769px){
+
+    #header-container {
+        justify-content: space-between;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #burger {
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .burger-line {
+        width: 30px;
+        height: 5px;
+        background-color: var(--color-button-outline);
+        transition: transform 0.5s, opacity 0.5s;
+    }
+
+    #burger.active .burger-line:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    #burger.active .burger-line:nth-child(2) {
+        transform: rotate3d(0, 1, 0, 90deg)
+    }
+    #burger.active .burger-line:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    #burger-menu {
+        display: flex;
+    }
+
+    #burger-menu.active {
+        top: var(--header-min-height);
+    }
+
+    .lang-flag-container {
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    #title {
+        margin-left: 100px;
+    }
 }

@@ -20,9 +20,15 @@
     --color-background: white;
     --color-intel-section: #37BCBD;
 
-    --header-min-height: 80px;
+    --header-min-height: 100px;
+    --header-margin-rl: 40px;
 
-    --normal-txt-size: 1.2em
+    --normal-txt-size: 1.2em;
+
+    --small-width: 480px;
+    --mid-width: 768px;
+    --big-width: 1279px;
+    --xl-width: 1280px;
 }
 
 * {

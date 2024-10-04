@@ -13,6 +13,7 @@
 
     <script src="resources/js/script.js" defer></script>
     <script src="resources/js/lang-injection.js" defer></script>
+    <script src="resources/js/burger-menu.js" defer></script>
 
     <script src="global/js/jquery-3.7.1.min.js" defer></script>
     <script src="global/js/loader.js" defer></script>
@@ -32,9 +33,21 @@
                         <div><a class="nav-link btn-norm" href="#experience"></a></div>
                         <div><a class="nav-link btn-diff" href="#projects"></a></div>
                         <div><a class="nav-link btn-norm" href="#contact"></a></div>
-                        <div><a id="lang-flag-container" href="#contact"><img id="lang-flag"/></a></div>
+                        <div><a class="lang-flag-container"><img class="lang-flag"/></a></div>
                     </ul>
                 </nav>
+                <div id="burger">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <div id="burger-menu">
+                    <div><a href="#bio" class="nav-link burger-link"></a></div>
+                    <div><a href="#experience" class="nav-link burger-link"></a></div>
+                    <div><a href="#projects" class="nav-link burger-link"></a></div>
+                    <div><a href="#contact" class="nav-link burger-link"></a></div>
+                    <div><a class="nav-link lang-flag-container"><img class="lang-flag"/></a></div>
+                </div>
             </div>
             <section id="bio">
                 <img class="main-page-bg-img" src="resources/svg/background-bio.svg" alt="Image Description"/>
