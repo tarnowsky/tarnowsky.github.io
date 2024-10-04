@@ -53,11 +53,19 @@ section {
 }
 
 .card-txt-border-green {
-    border: 5px solid #09BC8A;
+    border: 5px solid var(--color-button-outline);
 }
 
 .card-txt-green * {
-    color: #09BC8A;
+    color: var(--color-button-outline);
+}
+
+.card-txt-border-intl {
+    border: 5px solid var(--color-intel-section);
+}
+
+.card-txt-intl * {
+    color: var(--color-intel-section);
 }
 
 .card-txt-bold {
